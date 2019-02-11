@@ -1,14 +1,15 @@
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color:  #FFFFFF;
+#topnav {
+    background-color: rgba(255,255,255,0.8);
     overflow: hidden;
+    z-index: 99;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+#topnav a {
     float: right;
+    display: block;
     color: #666666;
-    /*color: rgba(255,255,255,.5);*/
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -16,15 +17,19 @@
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-    /*background-color: #ddd;*/
+#topnav a:hover {
+    background-color: #ddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+#topnav a.active {
     background-color: #4CAF50;
     color: black;
+}
+
+.content {
+    padding: 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -41,12 +46,18 @@
 
 
 header {
-    padding: 70px 0 420px;
+    padding: 60px 0 60px;
     background-color:  rgb(181, 224, 252);
+    font-size: 14px;
+    font-family:"Open Sans", Times, serif;
+    line-height: 16pt;
 }
 
 section {
-    padding: 25px 0 50px 0  ;
+    padding: 60px 0 60px 0  ;
+    font-size: 14px;
+    font-family:"Open Sans", Times, serif;
+    line-height: 16pt;
 }
 
 .column {
@@ -61,12 +72,19 @@ section {
     display: table;
     clear: both;
 }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 h1{
     text-align: center;
 }
 img {
-    height: 45%;
-    width: 45%;
+    padding: 25px 0 0;
+    width: 320px ;
+    height: 220px;
 }
 
 .leftalign {
@@ -79,14 +97,117 @@ img {
     text-align: center;
 }
 p{
-    font-size: 14px;
-    font-family:"Open Sans", Times, serif;
-    line-height: 16pt;
+
 }
 ul{
     font-size: 14px;
     font-family:"Open Sans", Times, serif;
     line-height: 16pt;
+}
+@keyframes grow-40{
+    from { right: 100%; }
+    to { right: 60%; }
+}
+@-webkit-keyframes grow-40{
+    from { right: 100%; }
+    to { right: 60%; }
+}
+@keyframes grow-55{
+    from { right: 100%; }
+    to { right: 45%; }
+}
+@-webkit-keyframes grow-55{
+    from { right: 100%; }
+    to { right: 45%; }
+}
+@keyframes grow-60{
+    from { right: 100%; }
+    to { right: 40%; }
+}
+@-webkit-keyframes grow-60{
+    from { right: 100%; }
+    to { right: 40%; }
+}
+@keyframes grow-65{
+    from { right: 100%; }
+    to { right: 35%; }
+}
+@-webkit-keyframes grow-65{
+    from { right: 100%; }
+    to { right: 35%; }
+}
+@keyframes grow-70{
+    from { right: 100%; }
+    to { right: 30%; }
+}
+@-webkit-keyframes grow-70{
+    from { right: 100%; }
+    to { right: 30%; }
+}
+
+.languages {
+    padding: 55px 0 60px;
+
+}
+.grid {
+    padding: 60px 0 60px;
+    position: relative;
+    right: 100px;
+    border-right: 1px dotted  rgb(181, 224, 252);
+    border-bottom: 1px dotted  rgb(181, 224, 252);
+
+}
+.bar {
+    float: left;
+    height: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.bar .inner {
+    background-color: rgb(181, 224, 252);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.bar.Java .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-70;
+    right: 30%;
+}
+.bar.C .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-55;
+    right: 45%;
+}
+.bar.JavaScript .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-60;
+    right: 40%;
+}
+.bar.Typescript .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-65;
+    right: 35%;
+}
+.bar.Python .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-40;
+    right: 60%;
+}
+.bar.SQL .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-65;
+    right: 35%;
+}
+.bar.HTML-CSS .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-60;
+    right: 40%;
 }
 
 footer {
@@ -96,5 +217,9 @@ footer {
     font-size: 12px;
     font-family:"Open Sans", Times, serif;
     padding: 45px 0;
-    line-height: 6pt;
+    line-height: 3px;
+}
+
+footer .p {
+
 }
