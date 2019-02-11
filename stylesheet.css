@@ -116,12 +116,6 @@ img {
     height: 220px;
 }
 
-
-ul{
-    font-size: 14px;
-    font-family:"Open Sans", Times, serif;
-    line-height: 16pt;
-}
 @keyframes grow-40{
     from { right: 100%; }
     to { right: 60%; }
