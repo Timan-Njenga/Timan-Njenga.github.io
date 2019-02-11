@@ -31,16 +31,20 @@
 
 <!-- Navigation -->
 <div id="topnav">
+    <a href="javascript:void(0);" class="icon" onclick="topnavmyFunction()">
+        <i class="fa fa-bars">&#xf0c9;</i>
+    </a>
     <a href="#contacts">Contact Me</a>
     <a href="Resume.pdf">Resume</a>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#about">About</a>
 </div>
 
 <header>
-    <div class="container">
-        <div class="row centeralign">
+    <div id="about" class="container">
+        <div class="row " style="text-align: center">
             <div class="col-lg-8 mx-auto">
                 <h1> Timan Njenga </h1>
                 <h3><i>Software Developer, Student</i></h3>
@@ -88,7 +92,7 @@
                 <h1>Projects</h1>
                 <div class="column">
                     <video width="320" height="240" autoplay muted loop>
-                        <source src="gif.mp4" type="video/mp4">
+                        <source src="media/indentifier-gif.mp4" type="video/mp4">
                     </video>
                     <h3>Indentifier project</h3>Language:<i>Python</i>
                     <p>&nbsp;</p>
@@ -96,7 +100,7 @@
                     <p> <a href="https://github.com/LucasZamprogno/410-CodeViz-Game">GitHub</a></p>
                 </div>
                 <div class="column">
-                    <img src="smtppop3.JPG" alt="SMTP POP3 Protocols">
+                    <img src="media/smtppop3.JPG" alt="SMTP POP3 Protocols">
                     <p>&nbsp;</p>
                     <h3>Email servers</h3>Lanugage:<i>C</i>
                     <p>&nbsp;</p>
@@ -104,7 +108,7 @@
                     <p> <a href="https://github.com/TimanNjenga/email-servers">GitHub</a></p>
                 </div>
                 <div class="column">
-                    <img src="dict.JPG" alt="DICT.org">
+                    <img src="media/dict.JPG" alt="DICT.org">
                     <p>&nbsp;</p>
                     <h3>Dict client app</h3>Language:<i>Java</i>
                     <p>&nbsp;</p>
@@ -113,7 +117,7 @@
 
                 </div>
                 <div class="column">
-                    <img src="pokedex.JPG" alt="pokedex">
+                    <img src="media/pokedex.JPG" alt="pokedex">
                     <p>&nbsp;</p>
                     <h3>Pokedex app</h3>Lanugages/Platform:<i>Typescript, SQL, Node.js</i>
                     <p>&nbsp;</p>
@@ -131,7 +135,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h1>Education</h1>
-                <div class="column leftalign">
+                <div class="column " style="text-align: left">
                     <p>&nbsp;</p>
                     <h3>Undergraduate</h3>
                     <p>&nbsp;</p>
@@ -140,7 +144,7 @@
                     <p style="line-height: 10px"><i>Combined major in Business and Computer Science</i></p>
                     <p style="line-height: 10px"><i>September 2014 to August 2019</i></p>
                 </div>
-                <div class="column leftalign">
+                <div class="column " style="text-align: left">
                     <p>&nbsp;</p>
                     <h3> Select Completed Coursework</h3>
                     <p>&nbsp;</p>
@@ -179,6 +183,7 @@
 
 <!--Personal reference links-->
 <script type="text/javascript" src="js/sticky-navbar.js"></script>
+<script type="text/javascript" src="js/responsive-topnav.js"></script>
 
 
 </body>
