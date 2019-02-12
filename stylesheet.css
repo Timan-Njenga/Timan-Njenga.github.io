@@ -95,6 +95,10 @@ section {
     width: 50%;
 }
 
+a.one:link {color:#0000ff;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#0000ff;}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
