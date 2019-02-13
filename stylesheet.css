@@ -1,11 +1,10 @@
-/* Add a black background color to the top navigation */
+
 #topnav {
     background-color: rgba(255,255,255,0.8);
     overflow: hidden;
     z-index: 99;
 }
 
-/* Style the links inside the navigation bar */
 #topnav a {
     float: right;
     display: block;
@@ -16,24 +15,20 @@
     font-size: 13px;
 }
 
-/* Change the color of links on hover */
 #topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Add a color to the active/current link */
 #topnav a.active {
     background-color: #4CAF50;
     color: black;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 #topnav .icon {
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     #topnav a:not(:last-child) {display: none;}
     #topnav a.icon {
@@ -42,7 +37,6 @@
     }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
     #topnav.responsive {position: relative;}
     #topnav.responsive a.icon {
@@ -61,18 +55,15 @@
     padding: 16px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 60px;
 }
-
 
 header {
     padding: 60px 0 60px;
@@ -95,25 +86,26 @@ section {
     width: 50%;
 }
 
-a.one:link {color:#0000ff;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#0000ff;}
-
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
     }
 }
+
+a.one:link {color:#0000ff;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#0000ff;}
+
 h1{
     text-align: center;
 }
+
 img {
     padding: 25px 0 0;
     width: 320px ;
@@ -124,26 +116,32 @@ img {
     from { right: 100%; }
     to { right: 60%; }
 }
+
 @-webkit-keyframes grow-40{
     from { right: 100%; }
     to { right: 60%; }
 }
+
 @keyframes grow-55{
     from { right: 100%; }
     to { right: 45%; }
 }
+
 @-webkit-keyframes grow-55{
     from { right: 100%; }
     to { right: 45%; }
 }
+
 @keyframes grow-60{
     from { right: 100%; }
     to { right: 40%; }
 }
+
 @-webkit-keyframes grow-60{
     from { right: 100%; }
     to { right: 40%; }
 }
+
 @keyframes grow-65{
     from { right: 100%; }
     to { right: 35%; }
@@ -152,10 +150,12 @@ img {
     from { right: 100%; }
     to { right: 35%; }
 }
+
 @keyframes grow-70{
     from { right: 100%; }
     to { right: 30%; }
 }
+
 @-webkit-keyframes grow-70{
     from { right: 100%; }
     to { right: 30%; }
@@ -165,6 +165,7 @@ img {
     padding: 55px 0 60px;
 
 }
+
 .grid {
     padding: 60px 0 60px;
     position: relative;
@@ -173,6 +174,7 @@ img {
     border-bottom: 1px dotted  rgb(181, 224, 252);
 
 }
+
 .bar {
     float: left;
     height: 15px;
@@ -195,31 +197,37 @@ img {
     -webkit-animation-name: grow-70;
     right: 30%;
 }
+
 .bar.C .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-55;
     right: 45%;
 }
+
 .bar.JavaScript .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-60;
     right: 40%;
 }
+
 .bar.Typescript .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-65;
     right: 35%;
 }
+
 .bar.Python .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-40;
     right: 60%;
 }
+
 .bar.SQL .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-65;
     right: 35%;
 }
+
 .bar.HTML-CSS .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-60;
@@ -231,6 +239,7 @@ img {
     list-style: none;
     padding-top: 20px;
 }
+
 .horizontal-list li {
     display: inline;
     padding: 10px;

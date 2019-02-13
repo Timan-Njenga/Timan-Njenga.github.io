@@ -1,4 +1,5 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+'use strict';
+
 function topnavmyFunction() {
     var x = document.getElementById("topnav");
     if (x.className === "topnav") {
