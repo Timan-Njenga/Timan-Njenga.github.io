@@ -83,7 +83,7 @@ section {
 .column {
     float: left;
     text-align: center;
-    width: 50%;
+    width: 24vw;
 }
 
 .row:after {
