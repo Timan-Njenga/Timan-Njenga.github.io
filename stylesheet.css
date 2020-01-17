@@ -219,6 +219,12 @@ img {
 .bar.Python .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-40;
+    right: 50%;
+}
+
+.bar.PHP .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-40;
     right: 60%;
 }
 
