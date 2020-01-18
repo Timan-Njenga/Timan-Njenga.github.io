@@ -83,7 +83,7 @@ section {
 .column {
     float: left;
     text-align: center;
-    width: 24vw;
+    width: 27vw ;
 }
 
 .row:after {
@@ -108,8 +108,8 @@ h1{
 
 img {
     padding: 25px 0 0;
-    width: 320px ;
-    height: 220px;
+    width: 25vw ;
+    height: 16vw;
 }
 
 @keyframes grow-40{
@@ -219,7 +219,7 @@ img {
 .bar.Python .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-40;
-    right: 50%;
+    right: 70%;
 }
 
 .bar.PHP .inner{
