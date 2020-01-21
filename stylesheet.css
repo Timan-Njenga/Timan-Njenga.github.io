@@ -112,6 +112,16 @@ img {
     height: 16vw;
 }
 
+@keyframes grow-30{
+    from { right: 100%; }
+    to { right: 70%; }
+}
+
+@-webkit-keyframes grow-30{
+    from { right: 100%; }
+    to { right: 70%; }
+}
+
 @keyframes grow-40{
     from { right: 100%; }
     to { right: 60%; }
@@ -120,6 +130,26 @@ img {
 @-webkit-keyframes grow-40{
     from { right: 100%; }
     to { right: 60%; }
+}
+
+@keyframes grow-45{
+    from { right: 100%; }
+    to { right: 55%; }
+}
+
+@-webkit-keyframes grow-45{
+    from { right: 100%; }
+    to { right: 55%; }
+}
+
+@keyframes grow-50{
+    from { right: 100%; }
+    to { right: 50%; }
+}
+
+@-webkit-keyframes grow-50{
+    from { right: 100%; }
+    to { right: 50%; }
 }
 
 @keyframes grow-55{
@@ -194,31 +224,31 @@ img {
 
 .bar.Java .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-70;
-    right: 30%;
+    -webkit-animation-name: grow-60;
+    right: 40%;
 }
 
 .bar.C .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-45;
+    right: 55%;
+}
+
+.bar.JavaScript .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-55;
     right: 45%;
 }
 
-.bar.JavaScript .inner{
-    -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-60;
-    right: 40%;
-}
-
 .bar.Typescript .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-65;
-    right: 35%;
+    -webkit-animation-name: grow-55;
+    right: 45%;
 }
 
 .bar.Python .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-40;
+    -webkit-animation-name: grow-30;
     right: 70%;
 }
 
@@ -230,14 +260,14 @@ img {
 
 .bar.SQL .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-65;
-    right: 35%;
+    -webkit-animation-name: grow-55;
+    right: 45%;
 }
 
 .bar.HTML-CSS .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-60;
-    right: 40%;
+    -webkit-animation-name: grow-50;
+    right: 50%;
 }
 
 .horizontal-list {
