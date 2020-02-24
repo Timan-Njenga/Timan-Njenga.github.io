@@ -83,7 +83,7 @@ section {
 .column {
     float: left;
     text-align: center;
-    width: 50%;
+    width: 27vw ;
 }
 
 .row:after {
@@ -92,7 +92,7 @@ section {
     clear: both;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .column {
         width: 100%;
     }
@@ -108,8 +108,18 @@ h1{
 
 img {
     padding: 25px 0 0;
-    width: 320px ;
-    height: 220px;
+    width: 25vw ;
+    height: 16vw;
+}
+
+@keyframes grow-30{
+    from { right: 100%; }
+    to { right: 70%; }
+}
+
+@-webkit-keyframes grow-30{
+    from { right: 100%; }
+    to { right: 70%; }
 }
 
 @keyframes grow-40{
@@ -120,6 +130,26 @@ img {
 @-webkit-keyframes grow-40{
     from { right: 100%; }
     to { right: 60%; }
+}
+
+@keyframes grow-45{
+    from { right: 100%; }
+    to { right: 55%; }
+}
+
+@-webkit-keyframes grow-45{
+    from { right: 100%; }
+    to { right: 55%; }
+}
+
+@keyframes grow-50{
+    from { right: 100%; }
+    to { right: 50%; }
+}
+
+@-webkit-keyframes grow-50{
+    from { right: 100%; }
+    to { right: 50%; }
 }
 
 @keyframes grow-55{
@@ -161,27 +191,23 @@ img {
     to { right: 30%; }
 }
 
+.languages {
+    padding: 55px 0 60px;
+
+}
+
 .grid {
     padding: 60px 0 60px;
     position: relative;
+    right: 100px;
     border-right: 1px dotted  rgb(181, 224, 252);
     border-bottom: 1px dotted  rgb(181, 224, 252);
-    width:75%;
-    left: 100px;
 
 }
-
-@media screen and (max-width: 768px) {
-    .grid {
-        padding: 30px 0 10px;
-        left: 50px;
-    }
-}
-
 
 .bar {
     float: left;
-    height: 20px;
+    height: 15px;
     margin-bottom: 20px;
     position: relative;
     width: 100%;
@@ -198,29 +224,35 @@ img {
 
 .bar.Java .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-55;
-    right: 30%;
+    -webkit-animation-name: grow-60;
+    right: 40%;
 }
 
 .bar.C .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-45;
+    right: 55%;
+}
+
+.bar.JavaScript .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-55;
     right: 45%;
 }
 
-.bar.JavaScript .inner{
-    -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-65;
-    right: 40%;
-}
-
 .bar.Typescript .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-65;
-    right: 35%;
+    -webkit-animation-name: grow-55;
+    right: 45%;
 }
 
 .bar.Python .inner{
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: grow-30;
+    right: 70%;
+}
+
+.bar.PHP .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-40;
     right: 60%;
@@ -228,14 +260,14 @@ img {
 
 .bar.SQL .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-65;
-    right: 35%;
+    -webkit-animation-name: grow-55;
+    right: 45%;
 }
 
 .bar.HTML-CSS .inner{
     -webkit-animation-duration: 6s;
-    -webkit-animation-name: grow-60;
-    right: 40%;
+    -webkit-animation-name: grow-50;
+    right: 50%;
 }
 
 .horizontal-list {
@@ -247,13 +279,6 @@ img {
 .horizontal-list li {
     display: inline;
     padding: 10px;
-}
-@media screen and (max-width: 600px) {
-    .horizontal-list li{
-        position: relative;
-        right:200px
-
-    }
 }
 
 footer {
