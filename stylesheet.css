@@ -225,7 +225,7 @@ img {
 .bar.Java .inner{
     -webkit-animation-duration: 6s;
     -webkit-animation-name: grow-45;
-    right: 40%;
+    right: 55%;
 }
 
 .bar.C .inner{
