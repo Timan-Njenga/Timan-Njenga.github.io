@@ -68,22 +68,22 @@
 header {
     padding: 60px 0 60px;
     background-color:  rgb(181, 224, 252);
-    font-size: 14px;
+    font-size: 15px;
     font-family:"Open Sans", Times, serif;
     line-height: 16pt;
 }
 
 section {
     padding: 60px 0 60px 0  ;
-    font-size: 14px;
+    font-size: 15px;
     font-family:"Open Sans", Times, serif;
     line-height: 16pt;
 }
 
 .column {
     float: left;
-    text-align: center;
-    width: 27vw ;
+    text-align: left;
+    width: 30vw ;
 }
 
 .column-large {
