@@ -61,29 +61,30 @@
 
 <section id="skills" class="bg-light">
     <div class="container" >
+        <!--            <div class="mx-auto">-->
         <div class="row">
-            <div class="mx-auto">
-                <h1>Language Proficiency</h1>
-                <div class="column languages" style="text-align: center">
-                    <p>Java</p>
-                    <p>C</p>
-                    <p>JavaScript</p>
-                    <p>Typescript</p>
-                    <p>Python</p>
-                    <p>PHP</p>
-                    <p>SQL</p>
-                    <p>HTML/CSS</p>
-                </div>
-                <div class="column grid" style="text-align: center">
-                    <div class="bar Java"><div class="inner"></div></div>
-                    <div class="bar C"><div class="inner"></div></div>
-                    <div class="bar JavaScript"><div class="inner"></div></div>
-                    <div class="bar Typescript"><div class="inner"></div></div>
-                    <div class="bar Python"><div class="inner"></div></div>
-                    <div class="bar PHP"><div class="inner"></div></div>
-                    <div class="bar SQL"><div class="inner"></div></div>
-                    <div class="bar HTML-CSS"><div class="inner"></div></div>
-                </div>
+            <h1>Language Proficiency</h1>
+        </div>
+        <div class="row">
+            <div class="column languages">
+                <p>Java</p>
+                <p>C</p>
+                <p>JavaScript</p>
+                <p>Typescript</p>
+                <p>Python</p>
+                <p>PHP</p>
+                <p>SQL</p>
+                <p>HTML/CSS</p>
+            </div>
+            <div class="column grid">
+                <div class="bar Java"><div class="inner"></div></div>
+                <div class="bar C"><div class="inner"></div></div>
+                <div class="bar JavaScript"><div class="inner"></div></div>
+                <div class="bar Typescript"><div class="inner"></div></div>
+                <div class="bar Python"><div class="inner"></div></div>
+                <div class="bar PHP"><div class="inner"></div></div>
+                <div class="bar SQL"><div class="inner"></div></div>
+                <div class="bar HTML-CSS"><div class="inner"></div></div>
             </div>
         </div>
     </div>
@@ -91,112 +92,121 @@
 
 <section id="projects" style="background-color:#d8d8d8;">
     <div class="container" >
+        <div class="row" style="margin-bottom: 1vh">
+            <h1>Projects</h1>
+        </div>
         <div class="row">
-            <div class="mx-auto">
-                <h1>Projects</h1>
-                <div class="row">
-                    <div class="column">
-                        <img src="media/smart-recycle-logo.png" alt="Smart Recycle"
-                             style="float:none; display: block; margin-left: auto;
-                             margin-right: auto; width: 12vw; height: 10vw;">
-                        <h3>Smart Recycle</h3>
-                        <p>Languages/Platforms : <i>Javascript, Node.js, Express.js, React, AWS (Elastic Beanstalk, S3, Certificate Manager, Route 53, CloudFront)</i></p>
-                        <p style="text-align: left">Developed a web application to take images and use AI to identify what is recyclable and how to sort it.  </p>
-                        <p> <a class="one" href="https://smartrecycleapp.com/" target="_blank">Link</a></p>
-                    </div>
-                    <div class="column">
-                        <img src="media/logo.png" alt="Juniors Barbershop and School"
-                             style="float:none; display: block; margin-left: auto;
-                              margin-right: auto; width: 8vw; height: 10vw;">
-                        <h3>Junior's Barbershop and School</h3>
-                        <p>Languages/Platforms : <i>Javascript, SQL, Node.js, Loopback.io, React, AWS (RDS, Elastic Beanstalk, S3, Certificate Manager, Route 53, CloudFront)</i></p>
-                        <p style="text-align: left">Developed a website with a queueing and scheduling web application using React.js ,Loopback.io and AWS Developer Tools for database and website hosting  </p>
-                        <p> <a class="one" href="https://juniorsbarbers.com" target="_blank">Link</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <video width="320" height="240" autoplay muted loop>
-                            <source src="media/indentifier-gif.mp4" type="video/mp4">
-                        </video>
-                        <h3>Indentifier project</h3>Language:<i>Python</i>
-                        <p>&nbsp;</p>
-                        <p style="text-align: left">Created and tested a game to visualize code smells using lexical analysis in Python using Pygame</p>
-                        <p> <a class="one" href="https://github.com/LucasZamprogno/410-CodeViz-Game" target="_blank">GitHub</a></p>
-                    </div>
-                    <div class="column">
-                        <img src="media/smtppop3.JPG" alt="SMTP POP3 Protocols">
-                        <p>&nbsp;</p>
-                        <h3>Email servers</h3>Lanugage:<i>C</i>
-                        <p>&nbsp;</p>
-                        <p style="text-align: left">Developed an SMTP server to save emails and created a POP3 server to retrieve the emails through a TCP connection, in C</p>
-                        <p> <a class="one" href="https://github.com/TimanNjenga/email-servers" target="_blank">GitHub</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <img src="media/dict.JPG" alt="DICT.org">
-                        <p>&nbsp;</p>
-                        <h3>Dict client app</h3>Language:<i>Java</i>
-                        <p>&nbsp;</p>
-                        <p style="text-align: left">Implemented a client application on Java that connects to a dict.org server using UDP sockets to search and return definitions from specified databases</p>
-                        <p><a class="one" href="https://github.com/TimanNjenga/DICT-client" target="_blank">GitHub</a></p>
+            <div class="column shadow">
+                <a href="https://smartrecycleapp.com/">
+                    <img src="media/smart-recycle-logo.png" alt="Smart Recycle" class="center"
+                         style="width: 12vw; height: 10vw;">
+                </a>
+                <h3>Smart Recycle</h3>
+                <p>Languages/Platforms : <i>Javascript, Node.js, Express.js, React, AWS (Elastic Beanstalk, S3, Certificate Manager, Route 53, CloudFront)</i></p>
+                <p style="text-align: left">Developed a web application to take images and use AI to identify what is recyclable and how to sort it.  </p>
+                <p> <a class="one" href="https://smartrecycleapp.com/" target="_blank">Link</a></p>
+            </div>
+            <div class="column shadow">
+                <a href="https://juniorsbarbers.com">
+                    <img src="media/logo.png" alt="Juniors Barbershop and School" class="center"
+                         style="width: 8vw; height: 10vw;">
+                </a>
+                <h3>Junior's Barbershop and School</h3>
+                <p>Languages/Platforms : <i>Javascript, SQL, Node.js, Loopback.io, React.js, AWS (RDS, Elastic Beanstalk, S3, Certificate Manager, Route 53, CloudFront)</i></p>
+                <p style="text-align: left">Developed a website with a queueing and scheduling web application</p>
+                <p> <a class="one" href="https://juniorsbarbers.com" target="_blank">Link</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column shadow">
+                <a href="https://github.com/LucasZamprogno/410-CodeViz-Game">
+                    <video width="320" height="240" autoplay muted loop  class="center">
+                        <source src="media/indentifier-gif.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <h3>Indentifier project</h3>Language : <i>Python</i>
+                <p>&nbsp;</p>
+                <p style="text-align: left">Created and tested a game to visualize code smells using lexical analysis in Python using Pygame</p>
+                <p> <a class="one" href="https://github.com/LucasZamprogno/410-CodeViz-Game" target="_blank">GitHub</a></p>
+            </div>
+            <div class="column shadow">
+                <a href="https://github.com/LucasZamprogno/410-CodeViz-Game">
+                    <img src="media/smtppop3.JPG" alt="SMTP POP3 Protocols"  class="center">
+                </a>
+                <p>&nbsp;</p>
+                <h3>Email servers</h3>Lanugage : <i>C</i>
+                <p>&nbsp;</p>
+                <p style="text-align: left">Developed an SMTP server to save emails and created a POP3 server to retrieve the emails through a TCP connection</p>
+                <p> <a class="one" href="https://github.com/TimanNjenga/email-servers" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column shadow">
+                <a href="https://github.com/TimanNjenga/DICT-client">
+                    <img src="media/dict.JPG" alt="DICT.org"  class="center">
+                </a>
+                <p>&nbsp;</p>
+                <h3>Dict client app</h3>Language : <i>Java</i>
+                <p>&nbsp;</p>
+                <p style="text-align: left">Implemented a client application on Java that connects to a dict.org server using UDP sockets to search and return definitions from specified databases</p>
+                <p><a class="one" href="https://github.com/TimanNjenga/DICT-client" target="_blank">GitHub</a></p>
 
-                    </div>
-                    <div class="column">
-                        <img src="media/pokedex.JPG" alt="pokedex">
-                        <p>&nbsp;</p>
-                        <h3>Pokedex app</h3>Lanugages/Platform:<i>Typescript, SQL, Node.js</i>
-                        <p>&nbsp;</p>
-                        <ul style="text-align: left"><li>Modelled, implemented and populated a Pokémon database on MyQL</li>
-                            <li>Designed and developed the app functionalities using Node.js, typescript and EJS and Embedded the database system in the app</li></ul>
-                        <p> <a class="one" href="https://github.com/304-project/pokedex" target="_blank">GitHub</a></p>
-                    </div>
-                </div>
+            </div>
+            <div class="column shadow">
+                <a href="https://github.com/304-project/pokedex">
+                    <img src="media/pokedex.JPG" alt="pokedex" class="center">
+                </a>
+                <p>&nbsp;</p>
+                <h3>Pokedex app</h3>Languages/Platform : <i>Typescript, SQL, Node.js</i>
+                <p>&nbsp;</p>
+                <p style="text-align: left">Designed and populated a Pokémon database on a simple application, allowing the user
+                    to sort and edit pokemon by name, type, habitat and evolutions and find gyms by name, type and badges.
+                </p>
+                <p> <a class="one" href="https://github.com/304-project/pokedex" target="_blank">GitHub</a></p>
             </div>
         </div>
     </div>
 </section>
 
 <section id="education-and-experience">
-    <div class="container" >
+    <div class="container">
         <div class="row">
-            <div class="mx-auto">
-                <h1>Education and Experience</h1>
-                <div class="column ">
-                    <p>&nbsp;</p>
-                    <h3>Undergraduate</h3>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p style="line-height: 10px"><i>University of British Columbia</i></p>
-                    <p style="line-height: 10px"><i>Combined major in Business and Computer Science</i></p>
-                    <p style="line-height: 10px"><i>September 2014 to May 2020</i></p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <h3>Experience</h3>
-                    <p>&nbsp;</p>
-                    <p style="line-height: 10px"><i>SAP</i></p>
-                    <p style="line-height: 10px"><i>Agile Developer Intern</i></p>
-                    <p style="line-height: 10px"><i>September 2020 to Current</i></p>
-                </div>
-                <div class="column ">
-                    <p>&nbsp;</p>
-                    <h3> Select Completed Coursework</h3>
-                    <p>&nbsp;</p>
-                    <p>CPSC 304: Introduction to Relational Databases</p>
-                    <p>CPSC 317: Internet Computing</p>
-                    <p>CPSC 319: Software Engineering Project</p>
-                    <p>CPSC 310: Introduction to Software Engineering</p>
-                    <p>CPSC 320: Algorithm Design and Analysis</p>
-                    <p>CPSC 410: Advanced Software Engineering</p>
-                    <p>CPSC 404: Advanced Relational Databases</p>
-                    <p>COMM 393: Commercial Law</p>
-                    <p>COMM 395: Business Communications</p>
-                    <p>COMM 335: Information Systems Technology and Development</p>
-                    <p>COMM 436: Information Systems Analysis and Design</p>
-                    <p>COMM 438: Management of Information Systems</p>
-                    <p>COMM 486N: CIO STRATEGIES</p>
-                </div>
+            <h1>Education and Experience</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p>&nbsp;</p>
+                <h3>Undergraduate</h3>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p style="line-height: 10px"><i>University of British Columbia</i></p>
+                <p style="line-height: 10px"><i>Combined major in Business and Computer Science</i></p>
+                <p style="line-height: 10px"><i>September 2014 to May 2020</i></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <h3>Experience</h3>
+                <p>&nbsp;</p>
+                <p style="line-height: 10px"><i>SAP</i></p>
+                <p style="line-height: 10px"><i>Agile Developer Intern</i></p>
+                <p style="line-height: 10px"><i>September 2020 to Current</i></p>
+            </div>
+            <div class="column">
+                <p>&nbsp;</p>
+                <h3> Select Completed Coursework</h3>
+                <p>&nbsp;</p>
+                <p>CPSC 304: Introduction to Relational Databases</p>
+                <p>CPSC 317: Internet Computing</p>
+                <p>CPSC 319: Software Engineering Project</p>
+                <p>CPSC 310: Introduction to Software Engineering</p>
+                <p>CPSC 320: Algorithm Design and Analysis</p>
+                <p>CPSC 410: Advanced Software Engineering</p>
+                <p>CPSC 404: Advanced Relational Databases</p>
+                <p>COMM 393: Commercial Law</p>
+                <p>COMM 395: Business Communications</p>
+                <p>COMM 335: Information Systems Technology and Development</p>
+                <p>COMM 436: Information Systems Analysis and Design</p>
+                <p>COMM 438: Management of Information Systems</p>
+                <p>COMM 486N: CIO STRATEGIES</p>
             </div>
         </div>
     </div>
@@ -210,7 +220,6 @@
             <li><a href=https://github.com/TimanNjenga><i class="fa fa-github fa-2x"></i> </a></li>
             <li><a href=https://www.linkedin.com/in/timan-njenga-wamweya/><i class="fa fa-linkedin fa-2x"></i></a></li>
         </ul>
-        <p class="m-0 text-center text-black">Timan Njenga Wamweya 2020</p>
     </div>
 </footer>
 
