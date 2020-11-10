@@ -107,6 +107,7 @@ section {
     box-shadow: 0 8px 6px -6px black;
     padding: 0 2vw 0 2vw;
     margin-right: 2vw ;
+    height: 70vh;
 }
 
 .column-large {
@@ -137,8 +138,8 @@ h1{
 
 img {
     padding: 25px 0 0;
-    width: 25vw ;
-    height: 16vw;
+    width: 23vw ;
+    height: 14vw;
 }
 
 @keyframes grow-30{
