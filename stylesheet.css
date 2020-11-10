@@ -92,6 +92,10 @@ section {
     margin:0 auto;
 }
 
+.container {
+    max-width: 90vw !important;
+}
+
 .column {
     text-align: left;
     width: 35vw ;
